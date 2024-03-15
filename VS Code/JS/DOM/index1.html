@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <section>
+        <h1>Our Skill</h1>
+    <ul>
+        <li>Html</li>
+        <li>CSS</li>
+        <li>Bootstrap</li>
+        <li>JavaScript</li>
+    </ul>
+    </section>
+    <section>
+        <h1>Our Skill</h1>
+    <ul>
+        <li>Html</li>
+        <li>CSS</li>
+        <li>Bootstrap</li>
+        <li>JavaScript</li>
+    </ul>
+    </section>
+    <section id="Ls">
+        <h1 id="last">Our Skill</h1>
+    <ul>
+        <li>Html</li>
+        <li>CSS</li>
+        <li>Bootstrap</li>
+        <li>JavaScript</li>
+    </ul>
+    </section>
+    <section>
+        <h1 id="food">Fav food</h1>
+        <ul id="FL">
+            <li>Biriany</li>
+            <li>polao</li>
+            <li>khicuri</li>
+        </ul>
+    </section>
+
+    <script>
+        // const allsection = document.getElementByTagName('section')
+        //     for(const section of allsection){
+        //         console.log(section.innerText);
+        //     }
+
+        const skill = document.getElementsByTagName('section');
+        for(const section of skill){
+            section.style.border = '5px solid steelblue'; 
+            section.style.borderRadius = '10px';
+            section.style.marginTop = '10px';
+            section.style.backgroundColor = 'lightgray';
+            section.style.paddingLeft = '5px';
+        }
+
+        // const skill = document.getElementById('last');
+        // skill.style.color = 'teal';
+
+        // const elements = document.getElementByTagName('h1');
+        // for(const h1 of elements){
+        //     console.log(h1.innerText);
+        // }
+        
+        
+
+        const foods = document.getElementById('FL');
+        const lil = document.createElement('li');
+        lil.innerText = 'kacchi';
+        foods.appendChild(lil);
+    </script>
+</body>
+</html>

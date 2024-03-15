@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Explor Dom</title>
+</head>
+<body>
+    <h1 id="wd">Explore Dom</h1>
+    <li>html</li>
+    <li>CSS</li>
+    <li>JAvascript</li>
+    <li>Python</li>
+    <script>
+        const elements = document.getElementsByTagName('h1');
+        for (const h1 of elements){
+            console.log(h1.innerText);
+        }
+    </script>
+</body>
+</html>
